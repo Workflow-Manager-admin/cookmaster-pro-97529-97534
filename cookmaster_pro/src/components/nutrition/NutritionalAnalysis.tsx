@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Recipe, NutritionData } from '@/types';
+import { NutritionData } from '@/types';
 
 // PUBLIC_INTERFACE
 export default function NutritionalAnalysis() {
