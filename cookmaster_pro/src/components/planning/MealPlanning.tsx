@@ -5,20 +5,20 @@ import { MealPlan } from '@/types';
 export default function MealPlanning() {
   const [currentWeek, setCurrentWeek] = useState<Date>(new Date());
   
-  // Placeholder meal plan data
-  const mealPlan: MealPlan = {
-    id: '1',
-    name: 'Weekly Plan',
-    startDate: '2023-06-01T00:00:00Z',
-    endDate: '2023-06-07T23:59:59Z',
-    meals: [
-      { id: '1', date: '2023-06-01T00:00:00Z', type: 'breakfast', recipeId: '101', servings: 2 },
-      { id: '2', date: '2023-06-01T00:00:00Z', type: 'lunch', recipeId: '102', servings: 2 },
-      { id: '3', date: '2023-06-01T00:00:00Z', type: 'dinner', recipeId: '103', servings: 4 },
-      { id: '4', date: '2023-06-02T00:00:00Z', type: 'breakfast', recipeId: '104', servings: 2 },
-      { id: '5', date: '2023-06-02T00:00:00Z', type: 'dinner', recipeId: '105', servings: 4 },
-    ]
-  };
+  // Placeholder meal plan data - keeping structure for future reference
+  // const mealPlan: MealPlan = {
+  //   id: '1',
+  //   name: 'Weekly Plan',
+  //   startDate: '2023-06-01T00:00:00Z',
+  //   endDate: '2023-06-07T23:59:59Z',
+  //   meals: [
+  //     { id: '1', date: '2023-06-01T00:00:00Z', type: 'breakfast', recipeId: '101', servings: 2 },
+  //     { id: '2', date: '2023-06-01T00:00:00Z', type: 'lunch', recipeId: '102', servings: 2 },
+  //     { id: '3', date: '2023-06-01T00:00:00Z', type: 'dinner', recipeId: '103', servings: 4 },
+  //     { id: '4', date: '2023-06-02T00:00:00Z', type: 'breakfast', recipeId: '104', servings: 2 },
+  //     { id: '5', date: '2023-06-02T00:00:00Z', type: 'dinner', recipeId: '105', servings: 4 },
+  //   ]
+  // };
 
   // Days of the week
   const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -91,7 +91,7 @@ export default function MealPlanning() {
                   <td className="px-6 py-4 whitespace-nowrap">
                     <div className="text-sm font-medium capitalize">{type}</div>
                   </td>
-                  {daysOfWeek.map((day, index) => {
+                  {daysOfWeek.map((day) => {
                     // This would normally find the meal for this day and type
                     const hasMeal = Math.random() > 0.5; // Just for demo
                     return (
