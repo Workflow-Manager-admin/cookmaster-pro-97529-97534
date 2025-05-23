@@ -1,4 +1,4 @@
-import { Recipe, Ingredient, NutritionData } from '@/types';
+import { Recipe, Ingredient, NutritionData, MealPlan } from '@/types';
 
 // PUBLIC_INTERFACE
 /**
