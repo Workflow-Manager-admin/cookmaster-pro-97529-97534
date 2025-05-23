@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CookMaster Pro
+
+A comprehensive recipe builder and management app that allows users to create, save, share, and explore recipes with advanced features like ingredient tracking, meal planning, and nutritional analysis.
+
+## Features
+
+- **Recipe Management**: Create, edit, save, and organize your recipes
+- **Ingredient Tracking**: Track ingredients in your pantry and generate shopping lists
+- **Meal Planning**: Plan your meals for the week with a visual calendar
+- **Nutritional Analysis**: View detailed nutritional information for recipes and daily intake
 
 ## Getting Started
 
@@ -16,21 +25,51 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+cookmaster_pro/
+├── src/
+│   ├── app/               # Next.js app directory
+│   ├── components/        # React components
+│   │   ├── shared/        # Shared UI components
+│   │   ├── recipe/        # Recipe management components
+│   │   ├── ingredients/   # Ingredient tracking components
+│   │   ├── planning/      # Meal planning components
+│   │   └── nutrition/     # Nutritional analysis components
+│   ├── context/           # React context for state management
+│   ├── services/          # API services
+│   ├── types/             # TypeScript type definitions
+│   └── utils/             # Utility functions
+├── public/                # Static assets
+└── ...                    # Config files
+```
 
-## Learn More
+## Component Architecture
 
-To learn more about Next.js, take a look at the following resources:
+- **MainContainer**: The primary container that integrates all features
+- **Shared Components**:
+  - Header: App header with search and user controls
+  - Sidebar: Navigation sidebar
+  - Footer: App footer
+- **Feature Components**:
+  - RecipeManagement: Interface for creating and managing recipes
+  - IngredientTracking: Pantry tracking and shopping list management
+  - MealPlanning: Weekly meal planning calendar
+  - NutritionalAnalysis: Recipe and daily nutrition analysis
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
 
-## Deploy on Vercel
+## Future Enhancements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- User authentication
+- Social sharing
+- Recipe recommendations
+- Mobile app version
+- Barcode scanner for ingredients
+- Integration with grocery delivery services
