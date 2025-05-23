@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { MealPlan } from '@/types';
+// MealPlan will be used when implementing actual functionality
+// import { MealPlan } from '@/types';
 
 // PUBLIC_INTERFACE
 export default function MealPlanning() {
